@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CanDerive</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>213</width>
+      <height>545</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="3" column="0" colspan="2">
+      <widget class="Line" name="line_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="button_mc_close">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>关闭多圈编码</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="1">
+      <widget class="QPushButton" name="button_pid_set">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>设置</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0">
+      <widget class="QPushButton" name="button_pid_control">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>pid控制</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0">
+      <widget class="QLabel" name="label_kd">
+       <property name="text">
+        <string>KD</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="button_enable">
+       <property name="text">
+        <string>电机启动</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLineEdit" name="edit_kp"/>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="Line" name="line_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0" colspan="2">
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QPushButton" name="button_speed_single">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>单点发送</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0" colspan="2">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="0">
+      <widget class="QLabel" name="label_single_encode">
+       <property name="text">
+        <string>单圈编码器数值</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="button_disable">
+       <property name="text">
+        <string>电机停止</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="18" column="0" colspan="2">
+      <widget class="Line" name="line_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLineEdit" name="edit_speed_input"/>
+     </item>
+     <item row="14" column="1">
+      <widget class="QLineEdit" name="edit_kd"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="button_mc_open">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>开启多圈编码</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_speed">
+       <property name="text">
+        <string>速度发送</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="button_derive_close">
+       <property name="text">
+        <string>CAN关闭</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="edit_ki"/>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_kp">
+       <property name="text">
+        <string>KP</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="button_derive_open">
+       <property name="text">
+        <string>CAN启动</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="0">
+      <widget class="QLabel" name="label_encode_2">
+       <property name="text">
+        <string>多圈编码器数值</string>
+       </property>
+      </widget>
+     </item>
+     <item row="16" column="0" colspan="2">
+      <widget class="Line" name="line_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="17" column="1">
+      <widget class="QLineEdit" name="edit_encode_single"/>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="button_speed_continue_start">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>开启连续发送</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="20" column="0" colspan="2">
+      <widget class="QTextBrowser" name="textbrowser_log"/>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLabel" name="label_ki">
+       <property name="text">
+        <string>KI</string>
+       </property>
+      </widget>
+     </item>
+     <item row="19" column="1">
+      <widget class="QLineEdit" name="edit_encode_multi"/>
+     </item>
+     <item row="9" column="0">
+      <widget class="QPushButton" name="button_speed_continue_close">
+       <property name="maximumSize">
+        <size>
+         <width>16770000</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>关闭连续发送</string>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsViewl">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>0</y>
+      <width>531</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line_8">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>540</y>
+      <width>193</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
